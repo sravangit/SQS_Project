@@ -13,6 +13,7 @@
 2. Import the project as Git -> Projects from Git -> Existing local repository -> select the cloned project
 3 a sample video to clone the github repository into eclipse IDE https://www.youtube.com/watch?v=LPT7v69guVY
 4 if using chrome, internet explorer or firefox clear cache, sessions and cookies before running the tests
+5. make sure to configure the build in the IDE as selecting the compiler as 'jdk <versionx>' instead jre.
 
 ## to run a project from maven command
 1. to run the test on chrome open testng.xml file and change the parameter name="browserName" with value="chrome" or if IE then change value="ie" or firefox change value="firefox".

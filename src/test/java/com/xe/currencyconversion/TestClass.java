@@ -1,5 +1,6 @@
 package com.xe.currencyconversion;
 
+import java.text.DecimalFormat;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +48,7 @@ public class TestClass {
 	static WebElement value;
 	
 	@FindBy(how = How.XPATH, using = "//div[@class='converterresult-conversionTo']/span[contains(@class,'toAmount')]")
-	static WebElement actualConversionRate;
+	static WebElement actualConversionValue;
 	
 	
 	public static WebDriver driver;
@@ -65,8 +66,8 @@ public class TestClass {
 		  		  						
 				if (browserName.equalsIgnoreCase("firefox")) {
 					cap.setCapability(CapabilityType.BROWSER_NAME, "firefox");
-					cap.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, false);
-					cap.setCapability(CapabilityType.SUPPORTS_WEB_STORAGE , false);
+					cap.setCapability(CapabilityType.SUPPORTS_APPLICATION_CACHE, true);
+					cap.setCapability(CapabilityType.SUPPORTS_WEB_STORAGE , true);
 					System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//browserDrivers//geckodriver.exe");
 					driver = new FirefoxDriver(cap);
 
@@ -123,17 +124,16 @@ public class TestClass {
 		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  Actions action = new Actions(driver);
 		  action.moveToElement(currencyFromDropdown).click().build().perform();
-		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-
-		  action.moveToElement(driver.findElement(By.xpath("//*[contains(text(), 'EUR')]"))).click().build().perform();
+     	  action.moveToElement(driver.findElement(By.xpath("//*[contains(text(), 'EUR')]"))).click(driver.findElement(By.xpath("//*[contains(text(), 'EUR')]"))).build().perform();
 		  
+     	  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  String getcurrencyFromValue = driver.findElement(By.xpath("//div/label[@for='from']//..//div/span[@class='dropdown-currencyCode']")).getText();
 		  System.out.println("currency value 1: " +getcurrencyFromValue);
 		  
 		  //find currency_to_field and select a currency  		  
 		  action.moveToElement(currencyToDropdown).click().build().perform();
-	  
-		  action.moveToElement(driver.findElement(By.xpath("//*[contains(text(), 'GBP')]"))).click().build().perform();
+		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		  action.moveToElement(driver.findElement(By.xpath("//*[contains(text(), 'GBP')]"))).click(driver.findElement(By.xpath("//*[contains(text(), 'GBP')]"))).build().perform();
 		  
 		  String getcurrencyToValue = driver.findElement(By.xpath("//div/label[@for='to']//..//div/span[@class='dropdown-currencyCode']")).getText();
 		  System.out.println("currency value 2: " +getcurrencyToValue);
@@ -143,8 +143,6 @@ public class TestClass {
 		  
 		  submitButton.click();
 		  
-		  System.out.println("current conversion rate: " +actualConversionRate.getText());
-		  
 		  //get the title of the page to display the currency exchange between 2 types of currecies
 		  String expectedTitle = "XE Currency Converter: EUR to GBP";
 		  String actualTitle = "XE Currency Converter: " +getcurrencyFromValue+ " to " +getcurrencyToValue;
@@ -153,18 +151,21 @@ public class TestClass {
 		  //check final result after conversion 
 		  String conversionvalue = conversionrate.getText();
 		  String conversionratesplit = conversionvalue.split(" ")[3];
-		  System.out.println("expected value1: "+conversionratesplit);
+		  System.out.println("current currency exchange: "+conversionratesplit);
+		  double getCurrencyExchange = Double.valueOf(conversionratesplit);
+		  DecimalFormat df = new DecimalFormat("###.#####");
+		  double currentCurrencyExchange = Double.valueOf(df.format(getCurrencyExchange));
 		  
 		  double enteredValue = Double.valueOf(value.getAttribute("value"));
 		  System.out.println("entered value1: "+enteredValue);
 		  
-		  double expectedvalue = enteredValue * Double.valueOf(conversionratesplit);
+		  double expectedvalue = enteredValue * currentCurrencyExchange;
 		  System.out.println("expected value: "+expectedvalue);
 		  
 		  double finalvalue = Math.round(expectedvalue*100.0)/100.0;
 		  System.out.println("rounded value: "+finalvalue);
 		  
-		  String actualvalue = actualConversionRate.getText();
+		  String actualvalue = actualConversionValue.getText();
 		  String getactualvalueDouble = actualvalue.toString().replaceAll(",", "");
 		  double finalresult = Double.valueOf(getactualvalueDouble);
 		  double actualroundedValue = Math.round(finalresult*100.0)/100.0;

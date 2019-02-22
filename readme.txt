@@ -16,7 +16,7 @@
 5. make sure to configure the project build path in the IDE as selecting the compiler as 'jdk <versionx>' instead jre under Build path -> Libraries
 
 ## to run a project from maven command
-1. to run the test on chrome open testng.xml file and change the parameter name="browserName" with value="chrome" or if IE then change value="ie" or firefox change value="firefox".
+1. to run the test on chrome open config.properties file and change the browser=chrome or if IE then change browser=ie or if firefox change browser=firefox.
 2. open command window and navigate to project root folder- for this project the root folder name is SQS_Project
 3. run the maven command as "mvn -Ptest clean package"
 4. the commonad window shows that the test is running

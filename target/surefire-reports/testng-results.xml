@@ -2,23 +2,16 @@
 <testng-results total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-02-13T08:39:54Z" name="Suite" finished-at="2019-02-13T08:41:49Z" duration-ms="115849">
+  <suite started-at="2019-02-22T09:22:33Z" name="Suite" finished-at="2019-02-22T09:25:35Z" duration-ms="182028">
     <groups>
     </groups>
-    <test started-at="2019-02-13T08:39:54Z" name="Test" finished-at="2019-02-13T08:41:49Z" duration-ms="115849">
+    <test started-at="2019-02-22T09:22:33Z" name="Test" finished-at="2019-02-22T09:25:35Z" duration-ms="182028">
       <class name="com.xe.currencyconversion.TestClass">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:39:54Z" name="setup" finished-at="2019-02-13T08:40:13Z" duration-ms="19063" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:22:33Z" name="setup" finished-at="2019-02-22T09:23:22Z" duration-ms="48716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:40:13Z" name="f" data-provider="data" finished-at="2019-02-13T08:40:18Z" duration-ms="5360" status="PASS">
+        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:23:22Z" name="f" data-provider="data" finished-at="2019-02-22T09:23:28Z" duration-ms="6001" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,22 +22,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:40:18Z" name="tearDown" finished-at="2019-02-13T08:40:27Z" duration-ms="9142" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:23:28Z" name="tearDown" finished-at="2019-02-22T09:23:28Z" duration-ms="758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:40:27Z" name="setup" finished-at="2019-02-13T08:40:43Z" duration-ms="15755" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:23:28Z" name="setup" finished-at="2019-02-22T09:23:50Z" duration-ms="21262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:40:43Z" name="f" data-provider="data" finished-at="2019-02-13T08:40:48Z" duration-ms="4751" status="PASS">
+        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:23:50Z" name="f" data-provider="data" finished-at="2019-02-22T09:23:56Z" duration-ms="5961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,22 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:40:48Z" name="tearDown" finished-at="2019-02-13T08:40:49Z" duration-ms="956" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:23:56Z" name="tearDown" finished-at="2019-02-22T09:23:56Z" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:40:49Z" name="setup" finished-at="2019-02-13T08:41:03Z" duration-ms="14626" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:23:56Z" name="setup" finished-at="2019-02-22T09:24:35Z" duration-ms="38697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:03Z" name="f" data-provider="data" finished-at="2019-02-13T08:41:08Z" duration-ms="4616" status="PASS">
+        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:24:35Z" name="f" data-provider="data" finished-at="2019-02-22T09:24:41Z" duration-ms="5367" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,22 +60,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:08Z" name="tearDown" finished-at="2019-02-13T08:41:09Z" duration-ms="968" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:24:41Z" name="tearDown" finished-at="2019-02-22T09:24:41Z" duration-ms="735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:09Z" name="setup" finished-at="2019-02-13T08:41:23Z" duration-ms="14350" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:24:41Z" name="setup" finished-at="2019-02-22T09:25:00Z" duration-ms="18859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:23Z" name="f" data-provider="data" finished-at="2019-02-13T08:41:28Z" duration-ms="5011" status="PASS">
+        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:25:00Z" name="f" data-provider="data" finished-at="2019-02-22T09:25:07Z" duration-ms="6740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -107,22 +79,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:28Z" name="tearDown" finished-at="2019-02-13T08:41:29Z" duration-ms="1018" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:25:07Z" name="tearDown" finished-at="2019-02-22T09:25:08Z" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:29Z" name="setup" finished-at="2019-02-13T08:41:44Z" duration-ms="14521" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:25:08Z" name="setup" finished-at="2019-02-22T09:25:29Z" duration-ms="21580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:44Z" name="f" data-provider="data" finished-at="2019-02-13T08:41:48Z" duration-ms="4675" status="PASS">
+        <test-method signature="f(double)[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:25:29Z" name="f" data-provider="data" finished-at="2019-02-22T09:25:34Z" duration-ms="5017" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +98,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@3ce1e309]" started-at="2019-02-13T08:41:48Z" name="tearDown" finished-at="2019-02-13T08:41:49Z" duration-ms="1023" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.xe.currencyconversion.TestClass@d257579]" started-at="2019-02-22T09:25:34Z" name="tearDown" finished-at="2019-02-22T09:25:35Z" duration-ms="728" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

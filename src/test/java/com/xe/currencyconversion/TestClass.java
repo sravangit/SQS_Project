@@ -13,9 +13,7 @@ import com.xe.util.Base;
 
 public class TestClass extends Base {
 
-	// public static WebDriver driver;
 	public static FluentWait<WebDriver> wait;
-	// private RespositoryParser parser;
 	static HomePage homepage;
 	static ConversionPage conversionpage;
 
@@ -28,7 +26,7 @@ public class TestClass extends Base {
 	 * this testng beforemethod is to setup WebDriver of a particular browser and
 	 * launch application before test method executes
 	 * 
-	 * @param browserName
+	 * 
 	 */
 	@BeforeMethod
 	public void setup() {
@@ -43,7 +41,7 @@ public class TestClass extends Base {
 	 * This is test method for testing currency exchange with different set of test
 	 * data
 	 * 
-	 * @param n
+	 *
 	 */
 
 	@Test(dataProvider = "data")
